@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.0.16" />
+    <PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="8.0.16" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POCEventSourcing.Cache\POCEventSourcing.Cache.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Core\POCEventSourcing.Core.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.DB\POCEventSourcing.DB.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Entities\POCEventSourcing.Entities.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Interfaces\POCEventSourcing.Interfaces.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Options\POCEventSourcing.Options.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Repositories\POCEventSourcing.Repositories.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Services\POCEventSourcing.Services.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Trackers\POCEventSourcing.Trackers.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+{
+  "ServiceBusOptions": {
+    "ConnectionString": "Endpoint=sb://pocdatabaseintegration.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=43m+FF5d7od71YfGnBNpAUVu8pJaoPT6noMdddlN2kg="
+  },
+
+  "WritableDatabaseOptions": {
+    "ConnectionString": "Data Source=DESKTOP-VCS41DC\\SQLEXPRESS;Initial Catalog=POCEventSourcing;Persist Security Info=True; MultipleActiveResultSets=True; Integrated Security=true;"
+  },
+
+  "CacheOptions": {
+    "Host": "localhost",
+    "Port": 6379
+  },
+
+  "ReadableDatabaseOptions": {
+    "Type": "mongodb",
+    "Host": "localhost",
+    "Port": 27017,
+    "Username": "",
+    "Password": "",
+    "Database": "poceventsourcing"
+  },
+
+  "AuditLogTableStorageOptions": {
+    "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=pocwritesqlauditlog;AccountKey=eSSsRt7gUNJkoZanQ/4YLTtNIV3UF1q4MmkR0ryA2DF0ZEkfYfFI0rMdQoH/GRaW5346yHhOqAKDejAkBG/YoA==;EndpointSuffix=core.windows.net",
+    "TableName": "pocwritesqlauditlogtable",
+    "PartitionKey": "events"
+  }
+}

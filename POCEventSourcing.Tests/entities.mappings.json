@@ -1,0 +1,4 @@
+{
+  "Person": "POCEventSourcing.ReplicationJob.Entities.Person",
+  "PersonAddress": "POCEventSourcing.ReplicationJob.Entities.PersonAddress"
+}

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.Tables" Version="12.8.0" />
+    <PackageReference Include="Azure.Messaging.EventGrid" Version="4.17.0-beta.1" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POCEventSourcing.Core\POCEventSourcing.Core.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Entities\POCEventSourcing.Entities.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Enums\POCEventSourcing.Enums.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Interfaces\POCEventSourcing.Interfaces.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Options\POCEventSourcing.Options.csproj" />
+  </ItemGroup>
+
+</Project>

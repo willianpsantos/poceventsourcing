@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POCEventSourcing.Core\POCEventSourcing.Core.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Entities\POCEventSourcing.Entities.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Enums\POCEventSourcing.Enums.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Interfaces\POCEventSourcing.Interfaces.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Options\POCEventSourcing.Options.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Repositories\POCEventSourcing.Repositories.csproj" />
+    <ProjectReference Include="..\POCEventSourcing.Trackers\POCEventSourcing.Trackers.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+{
+  "Person": "POCEventSourcing.ReplicationJob.Processors.PersonEntityEventTrackerProcessor"
+}

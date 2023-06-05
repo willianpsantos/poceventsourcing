@@ -1,0 +1,29 @@
+{
+  //"ServiceBusOptions": {
+  //  "ConnectionString": "<User Secrets>"
+  //},
+
+  //"WritableDatabaseOptions": {
+  //  "ConnectionString": "<User Secrets>"
+  //},
+
+  "CacheOptions": {
+    "Host": "localhost",
+    "Port": 6379
+  },
+
+  "ReadableDatabaseOptions": {
+    "Type": "mongodb",
+    "Host": "localhost",
+    "Port": 27017,
+    "Username": "",
+    "Password": "",
+    "Database": "poceventsourcing"
+  },
+
+  "AuditLogTableStorageOptions": {
+    //"ConnectionString": "<User secrets>",
+    "TableName": "pocwritesqlauditlogtable",
+    "PartitionKey": "events"
+  }
+}
